@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
 
-Future runAppWithSentry(FlavorConfig config, Widget app) {
+Future runAppWithSentry(Config config, Widget app) {
   return SentryFlutter.init(
     (options) {
       options.dsn = kDebugMode ? '' : config.sentryDsn;

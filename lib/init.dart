@@ -9,7 +9,7 @@ import 'flavors.dart';
 Future init(Flavor flavor) async {
   await Executor().warmUp(log: kDebugMode);
   await HiveUtils.init();
-  final config = await FlavorConfig.fromEnv(flavor);
+  final config = await Config.fromEnv(flavor);
   await Services.init(config);
   await runAppWithSentry(config, const App());
 }

@@ -18,7 +18,7 @@ final _testing = Platform.environment.containsKey('FLUTTER_TEST');
 class Services {
   static bool _initialized = false;
 
-  static init(FlavorConfig config) async {
+  static init(Config config) async {
     if (_initialized) return;
     if (_testing) {
       await _initTesting(config);
@@ -28,15 +28,15 @@ class Services {
     _initialized = true;
   }
 
-  static Future _init(FlavorConfig config) async {
+  static Future _init(Config config) async {
     final getIt = GetIt.instance;
 
-    getIt.registerSingleton<FlavorConfig>(config);
+    getIt.registerSingleton<Config>(config);
 
     getIt.registerSingleton(AppRouter());
   }
 
-  static Future _initTesting(FlavorConfig config) async {
+  static Future _initTesting(Config config) async {
     return _init(config); // TODO
   }
 }

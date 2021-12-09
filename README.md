@@ -4,13 +4,16 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Flutter
 
-A few resources to get you started if this is your first Flutter project:
+We use Flutter's beta channel:
+```
+flutter channel beta && flutter upgrade
+```
+### Env vars
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Create duplicates of [`.env.sample`](./.env.sample) as `.env.dev` and `.env.prod` for the two flavors we have.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Run
+
+You can use VS Code's Run tab.

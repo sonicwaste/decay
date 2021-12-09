@@ -1,0 +1,59 @@
+name: decay
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.15.0-268.18.beta <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Crashlytics & logging
+  sentry_flutter: ^6.0.1
+  # Architecture
+  veee: ^0.9.1
+  get_it: ^7.2.0
+  rxdart: ^0.27.2
+  worker_manager: ^4.2.4 # Executor
+  # Data & storage
+  hive: ^2.0.4
+  hive_flutter: ^1.1.0
+  # Widgets & UI
+  auto_route: ^3.0.4
+  flutter_svg: ^0.22.0
+  animations: ^2.0.1
+  sliver_tools: ^0.2.5
+  scroll_builder: ^0.0.1
+  # Util
+  flutter_dotenv: ^5.0.2
+  collection: ^1.15.0
+  supercharged: ^2.1.1
+  flextensions: ^0.0.1
+
+dev_dependencies:
+  flutter_lints: ^1.0.0
+  build_runner: ^2.1.4
+  # Test
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  # Generators
+  auto_route_generator: ^3.0.1
+
+dependency_overrides:
+  async: ^2.8.2
+  auto_route: # Until conflict with Flutter's beta channel is resolved
+    git:
+      url: https://github.com/Agondev/auto_route_library
+      path: auto_route
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env.dev
+    - .env.prod

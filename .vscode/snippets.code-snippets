@@ -1,0 +1,29 @@
+{
+	"service": {
+		"prefix": "service",
+		"scope": "dart",
+		"body": [
+			"abstract class ${1:ServiceName} {}",
+			"",
+			"class ${1:ServiceName}Impl implements ${1:ServiceName} {}",
+		]
+	},
+
+	"ViewModelWidget": {
+		"prefix": "vmwidget",
+		"scope": "dart",
+		"body": [
+			"import 'package:veee/veee.dart';",
+			"import 'package:flutter/material.dart';",
+			"",
+			"class ${1:WidgetName} extends ViewModelWidget<${2:ViewModelName}> {",
+			"  const ${1:WidgetName}({Key? key}) : super(key: key);",
+			"",
+			"  @override",
+			"  Widget build(BuildContext context, ${2:ViewModelName} viewModel) {",
+			"    return Container();",
+			"  }",
+			"}",
+		]
+	}
+}

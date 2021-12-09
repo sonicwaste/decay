@@ -199,6 +199,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.2.0"
+  dynamic_theme:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: "8cb3f0c02bd2a3ae8a26d998c9664df7e7d17a9a"
+      url: "https://github.com/sonicwaste/dynamic_theme"
+    source: git
+    version: "0.0.1"
   fake_async:
     dependency: transitive
     description:
@@ -404,6 +413,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.12.11"
+  material_color_utilities:
+    dependency: transitive
+    description:
+      name: material_color_utilities
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.2"
   meta:
     dependency: transitive
     description:

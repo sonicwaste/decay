@@ -22,6 +22,8 @@ dependencies:
   hive: ^2.0.4
   hive_flutter: ^1.1.0
   # Widgets & UI
+  dynamic_theme:
+    git: https://github.com/sonicwaste/dynamic_theme
   auto_route: ^3.0.4
   flutter_svg: ^0.22.0
   animations: ^2.0.1
